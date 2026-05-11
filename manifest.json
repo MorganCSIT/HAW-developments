@@ -15,17 +15,6 @@
           "description": "Full BOI pitch: qualification strategy, deck outline, regulatory map, and risk checklist."
         }
       ]
-    },
-    {
-      "title": "Research",
-      "items": [
-        {
-          "slug": "deep-research-report",
-          "title": "Deep Research Report",
-          "file": "content/deep-research-report.md",
-          "description": "Background research on the specialty PT center business plan and BOI structuring options."
-        }
-      ]
     }
   ]
 }
