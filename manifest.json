@@ -1,0 +1,31 @@
+{
+  "site": {
+    "title": "BOI Phuket Rehab",
+    "subtitle": "Project workspace",
+    "intro": "Working documents for the BOI promotion application — Phuket Health Rehabilitation Center."
+  },
+  "sections": [
+    {
+      "title": "Pitch",
+      "items": [
+        {
+          "slug": "boi-pitch-rehab-center",
+          "title": "BOI Pitch — Rehab Center",
+          "file": "content/BOI Pitch rehab center.md",
+          "description": "Full BOI pitch: qualification strategy, deck outline, regulatory map, and risk checklist."
+        }
+      ]
+    },
+    {
+      "title": "Research",
+      "items": [
+        {
+          "slug": "deep-research-report",
+          "title": "Deep Research Report",
+          "file": "content/deep-research-report.md",
+          "description": "Background research on the specialty PT center business plan and BOI structuring options."
+        }
+      ]
+    }
+  ]
+}
