@@ -13,6 +13,12 @@
           "title": "BOI Pitch — Rehab Center",
           "file": "content/BOI Pitch rehab center.md",
           "description": "Full BOI pitch: qualification strategy, deck outline, regulatory map, and risk checklist."
+        },
+        {
+          "slug": "boi-subcon-networking-strategy",
+          "title": "BOI / SUBCON Thailand 2026 Networking Strategy",
+          "file": "content/boi_subcon_networking_strategy.md",
+          "description": "SUBCON visit strategy, partner targeting, supplier questions, and BOI application support notes."
         }
       ]
     }
