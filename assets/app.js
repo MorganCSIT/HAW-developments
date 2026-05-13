@@ -7,10 +7,17 @@ const state = {
   tocObserver: null,
 };
 
+const appRoot = document.currentScript?.dataset.root || '';
+
+function withAppRoot(path) {
+  if (!path || /^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith('#')) return path;
+  return `${appRoot}${path}`;
+}
+
 // ----- manifest -----
 
 async function loadManifest() {
-  const res = await fetch('manifest.json', { cache: 'no-cache' });
+  const res = await fetch(withAppRoot('manifest.json'), { cache: 'no-cache' });
   if (!res.ok) throw new Error(`manifest.json: HTTP ${res.status}`);
   return res.json();
 }
@@ -203,7 +210,7 @@ async function renderDoc(slug) {
   content.innerHTML = `<p class="muted">Loading ${escapeHtml(item.title)}…</p>`;
 
   try {
-    const res = await fetch(item.file, { cache: 'no-cache' });
+    const res = await fetch(withAppRoot(item.file), { cache: 'no-cache' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const md = await res.text();
     const html = renderMarkdown(md);

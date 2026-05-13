@@ -18,6 +18,14 @@ A static site that renders the project's markdown documents in a clean, shareabl
     └── app.js
 ```
 
+The public marketing pages are isolated under `landing/`:
+
+- `landing/index.html` - landing page
+- `landing/clients.html` - client interest page
+- `landing/partners.html` - partner/supplier page
+- `landing/assets/` - CSS and rendered page images
+- `landing/source-images/` - original building image sets
+
 ## Add a new markdown document
 
 1. Drop the `.md` file into `content/`.
